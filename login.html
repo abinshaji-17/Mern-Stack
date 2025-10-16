@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+
+<header>
+  <h1>Art Gallery</h1>
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+  </nav>
+</header>
+
+  <div class="container">
+    <div class="auth-card">
+      <h2>Login</h2>
+      <form action="/submit-login" method="POST">
+        <div class="form-field"><label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required />
+
+        <div class="form-field"><label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required />
+
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+      <div class="alt-link">
+        Don’t have an account? <a href="signup.html">Sign Up</a>
+      </div>
+      <div class="alt-link">
+        <a href="index.html">&larr; Back to Gallery</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
